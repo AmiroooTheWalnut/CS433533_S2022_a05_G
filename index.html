@@ -18,9 +18,30 @@ Select one texture, one obj file, and one scene.
 	<canvas id="dummy_canvas" width="1" height="1"></canvas>
 </div> 
 
-<canvas id="canvas"></canvas>
-
-<div class="wrapper">
+<div>
+	<div style="float: left; width: 50%">
+		<canvas id="canvas"></canvas>
+	</div> 
+	<div style="float: left; width: 50%">
+	<p align="center">
+  <input type="range" id="camXID" name="camX"
+         value="0" min="-50" max="50" step="0.01" style="width:100%" >
+  <p align="center">Cam X: <span id="camXLabelID"></span></p>
+  </p>
+  
+  <p align="center">
+  <input type="range" id="camYID" name="camY"
+         value="0" min="-50" max="50" step="0.01" style="width:100%" >
+  <p align="center">Cam Y: <span id="camYLabelID"></span></p>
+  </p>
+  
+  <p align="center">
+  <input type="range" id="camZID" name="camZ"
+         value="0" min="-50" max="50" step="0.01" style="width:100%" >
+  <p align="center">Cam Z: <span id="camZLabelID"></span></p>
+  </p>
+  
+  <div class="wrapper">
 	<input type="checkbox" id="isDepthBuffer" name="isDepthBuffer" value="0">
 	<label for="isDepthBuffer"> Show Depth buffer </label><br>
   <p align="center">
@@ -45,7 +66,15 @@ Select one texture, one obj file, and one scene.
          value="0" min="-50" max="50" step="0.01" style="width:100%" >
   <p align="center">Obj Z: <span id="objZLabelID"></span></p>
   </p>
+  
+  
 </div>
+	</div> 
+	
+	
+</div> 
+
+
 
 </body>
 <!--
